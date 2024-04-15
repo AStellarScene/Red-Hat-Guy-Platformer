@@ -1,6 +1,5 @@
 extends CharacterBody2D
 
-
 const SPEED = 300.0
 const JUMP_VELOCITY = -700
 
@@ -29,7 +28,6 @@ func _physics_process(delta):
 		velocity.y = -1000
 
 	move_and_slide()
-
 
 func _on_area_2d_area_entered(area):
 	if area.is_in_group("hurt"):
